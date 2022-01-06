@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Activity Logs</title>
+    <link>https://kkspassepied.github.io/blog/</link>
+    <description>Recent content on Activity Logs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Sun, 26 Dec 2021 12:55:33 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About This Pages</title>
+      <link>https://kkspassepied.github.io/blog/about-hugo/</link>
+      <pubDate>Thu, 06 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/about-hugo/</guid>
+      <description>このページはプログラミング勉強の活動記録です。
+活動内容  2021/12 -  Unityでゲーム作ってみよう    </description>
+    </item>
+    
+    <item>
+      <title>Kickoff</title>
+      <link>https://kkspassepied.github.io/blog/posts/20211226/</link>
+      <pubDate>Sun, 26 Dec 2021 12:55:33 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20211226/</guid>
+      <description>場所 Discoards
+日時 2021/12/26 19:50 - 21:55
+お題 やってみたいこと決める。
+内容 候補  ゲーム作ってみる Web開発 スマートロックとか作ってみる AI作ってみる  共通の趣味だしゲームが興味持って取り組めそう。
+詳細  環境は「Unity」 参考書をベースにプログラミングの基礎を学ぶ 参考書を終えたら好きなゲーム作ってみる  宿題  GitHubのOrganizationを用意 参考書用意  次回 2021/01/09 予定</description>
+    </item>
+    
+  </channel>
+</rss>
