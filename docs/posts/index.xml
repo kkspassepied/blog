@@ -6,8 +6,194 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 26 Dec 2021 12:55:33 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 09 Jan 2022 02:26:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第一回「Hello World」「変数」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220109/</link>
+			<pubDate>Sun, 09 Jan 2022 02:26:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220109/</guid>
+			<description>概要  場所  Discoards   日時  2022/01/09 09:00 - 11:10   お題  「Hello World!」「変数」について勉強しよう。    詳細 準備  VisualStudio2019にログイン  MSのアカウントがない場合は作成  GitHubアカウントでもいけるようなので、GitHubアカウントを作成した。     ペアプロのためVisualStudio2019に「Live Share」を入れてもらう  参考：MSDOC   「Live Share」をつないでみる  自分はVSCODEで実施    本編 (未)とあるところは説明しきれなかったところ。
+Hello World! Hello World /* * プログラム作成、実行、確認のプロセスを知る */ void Start() { // &amp;#34;Hello World!&amp;#34;を表示  Debug.Log(&amp;#34;Hello World!&amp;#34;); } 複数行で実行 /* * プログラムは上から順番に実行される * 表示する中身の数字は関係ない */ void Start() { Debug.</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/01/09 09:00 - 11:10</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「Hello World!」「変数」について勉強しよう。</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="準備">準備</h3>
+<ul>
+<li>VisualStudio2019にログイン
+<ul>
+<li>MSのアカウントがない場合は作成
+<ul>
+<li>GitHubアカウントでもいけるようなので、GitHubアカウントを作成した。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ペアプロのためVisualStudio2019に「Live Share」を入れてもらう
+<ul>
+<li><a href="https://docs.microsoft.com/ja-jp/visualstudio/liveshare/use/vs">参考：MSDOC</a></li>
+</ul>
+</li>
+<li>「Live Share」をつないでみる
+<ul>
+<li>自分はVSCODEで実施</li>
+</ul>
+</li>
+</ul>
+<h3 id="本編">本編</h3>
+<p>(未)とあるところは説明しきれなかったところ。</p>
+<h4 id="hello-world">Hello World!</h4>
+<h5 id="hello-world-1">Hello World</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="cm">/*
+</span><span class="cm">     * プログラム作成、実行、確認のプロセスを知る
+</span><span class="cm">    */</span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// &#34;Hello World!&#34;を表示
+</span><span class="c1"></span>        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div><h5 id="複数行で実行">複数行で実行</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="cm">/*
+</span><span class="cm">     * プログラムは上から順番に実行される
+</span><span class="cm">     * 表示する中身の数字は関係ない
+</span><span class="cm">    */</span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;3.Hello World!&#34;</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;2.Hello World!&#34;</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;1.Hello World!&#34;</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div><h5 id="実行エラー">実行エラー</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="cm">/*
+</span><span class="cm">     * エラー時の挙動を見てみる
+</span><span class="cm">     * 1. 記述は一言一句間違ってはいけない
+</span><span class="cm">     *    &gt;&gt;郵便屋さんと違って、多少の間違いを受け止めてくれない
+</span><span class="cm">     * 2. 行の終わりには`;`を
+</span><span class="cm">    */</span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 1. 定義にない関数コール
+</span><span class="c1"></span>        <span class="n">Debug</span><span class="p">.</span><span class="n">Lo</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">);</span>
+        <span class="c1">// 2. ; がない
+</span><span class="c1"></span>        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;Hello World!&#34;</span><span class="p">)</span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="質問">質問</h4>
+<ul>
+<li>Unityのシーンの画面に表示されるわけではないんですね
+<ul>
+<li>Yes、Debug.Logは「コンソール画面に表示してください」という命令だから</li>
+</ul>
+</li>
+<li>Hello Worldは日本語でもOK？
+<ul>
+<li>OKです</li>
+</ul>
+</li>
+</ul>
+<h4 id="変数について">変数について</h4>
+<h5 id="変数の宣言">変数の宣言</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="cm">/*
+</span><span class="cm">     * 変数は情報を保存するハコ
+</span><span class="cm">     * 宣言 -&gt; 初期化 -&gt; 利用の3段活用
+</span><span class="cm">     * (未)宣言と初期化は同時にできる
+</span><span class="cm">    */</span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="c1">// 宣言
+</span><span class="c1"></span>      <span class="kt">int</span> <span class="n">number</span><span class="p">;</span>
+      <span class="c1">// 代入(初期化)
+</span><span class="c1"></span>      <span class="n">number</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+      <span class="c1">// 利用ゥ!
+</span><span class="c1"></span>      <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div><h5 id="計算した結果を変数に入れる">計算した結果を変数に入れる</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="cm">/*
+</span><span class="cm">     * int型で計算ができる
+</span><span class="cm">     */</span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">number</span><span class="p">;</span>
+      <span class="c1">// 算数の計算ができます！
+</span><span class="c1"></span>      <span class="n">number</span> <span class="p">=</span> <span class="m">10</span> <span class="p">+</span> <span class="m">10</span><span class="p">;</span>
+      <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div><h5 id="変数同士で代入">変数同士で代入</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="cm">/*
+</span><span class="cm">     * int型同士で代入ができる
+</span><span class="cm">     * 複数の変数を定義した時の挙動に注意
+</span><span class="cm">     */</span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">number</span><span class="p">;</span>
+      <span class="n">number</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+      <span class="kt">int</span> <span class="n">answer</span><span class="p">;</span>
+      <span class="c1">// answerにnumberの数字を代入する
+</span><span class="c1"></span>      <span class="n">answer</span> <span class="p">=</span> <span class="n">number</span><span class="p">;</span>
+      <span class="n">number</span> <span class="p">=</span> <span class="m">20</span><span class="p">;</span>
+      <span class="c1">// numberを20にしてもanswerは10のまま
+</span><span class="c1"></span>      <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">answer</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div><h5 id="変数の宣言エラー">変数の宣言（エラー）</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="cm">/*
+</span><span class="cm">     * エラー時の挙動を見てみる
+</span><span class="cm">     * 1. 同じ名前で変数を２つ以上作れない
+</span><span class="cm">     * 2. (未)初期化を忘れない
+</span><span class="cm">     * 3. 宣言した「型」の物しか入れられない
+</span><span class="cm">    */</span>
+    <span class="c1">// 1. 同じ変数を定義する
+</span><span class="c1"></span>    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">number</span><span class="p">;</span>
+      <span class="kt">int</span> <span class="n">number</span><span class="p">;</span>
+
+      <span class="c1">// 2. 宣言だけで初期化しない場合
+</span><span class="c1"></span>      <span class="kt">int</span> <span class="n">number</span><span class="p">;</span>
+      <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">number</span><span class="p">);</span>
+
+      <span class="c1">// 3. int型に文字を入れる
+</span><span class="c1"></span>      <span class="kt">int</span> <span class="n">number</span> <span class="p">=</span> <span class="s">&#34;abc&#34;</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="質問-1">質問</h4>
+<ul>
+<li>型ってなんですか？鬼滅の刃風に説明お願いします
+<ul>
+<li>うぐっ・・・（私全然内容知らない）
+<ul>
+<li>とりあえずお互いが知ってるNARUTOで説明していこうと思います</li>
+<li>チャクラの性質変化で何となくな説明を行った</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="なぜ変数を使うのか">なぜ変数を使うのか？</h4>
+<ul>
+<li>同じものを何回も使える</li>
+<li>更新される値を入れる入れ物として使う</li>
+<li>どういう値なのかを名前で説明することができる</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2021/01/12 予定</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Kickoff</title>

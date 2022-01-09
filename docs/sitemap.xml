@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://kkspassepied.github.io/blog/</loc>
+    <lastmod>2022-01-09T02:26:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kkspassepied.github.io/blog/tags/activitylog/</loc>
+    <lastmod>2022-01-09T02:26:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kkspassepied.github.io/blog/tags/game/</loc>
+    <lastmod>2022-01-09T02:26:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kkspassepied.github.io/blog/posts/</loc>
+    <lastmod>2022-01-09T02:26:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kkspassepied.github.io/blog/tags/</loc>
+    <lastmod>2022-01-09T02:26:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kkspassepied.github.io/blog/tags/unity/</loc>
+    <lastmod>2022-01-09T02:26:00+00:00</lastmod>
+  </url><url>
+    <loc>https://kkspassepied.github.io/blog/posts/20220109/</loc>
+    <lastmod>2022-01-09T02:26:00+00:00</lastmod>
+  </url><url>
     <loc>https://kkspassepied.github.io/blog/about-hugo/</loc>
     <lastmod>2022-01-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://kkspassepied.github.io/blog/</loc>
-    <lastmod>2021-12-26T12:55:33+00:00</lastmod>
-  </url><url>
-    <loc>https://kkspassepied.github.io/blog/tags/activitylog/</loc>
-    <lastmod>2021-12-26T12:55:33+00:00</lastmod>
-  </url><url>
-    <loc>https://kkspassepied.github.io/blog/tags/game/</loc>
-    <lastmod>2021-12-26T12:55:33+00:00</lastmod>
-  </url><url>
     <loc>https://kkspassepied.github.io/blog/posts/20211226/</loc>
-    <lastmod>2021-12-26T12:55:33+00:00</lastmod>
-  </url><url>
-    <loc>https://kkspassepied.github.io/blog/posts/</loc>
-    <lastmod>2021-12-26T12:55:33+00:00</lastmod>
-  </url><url>
-    <loc>https://kkspassepied.github.io/blog/tags/</loc>
-    <lastmod>2021-12-26T12:55:33+00:00</lastmod>
-  </url><url>
-    <loc>https://kkspassepied.github.io/blog/tags/unity/</loc>
     <lastmod>2021-12-26T12:55:33+00:00</lastmod>
   </url>
 </urlset>

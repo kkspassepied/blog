@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 26 Dec 2021 12:55:33 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 02:26:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第一回「Hello World」「変数」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220109/</link>
+      <pubDate>Sun, 09 Jan 2022 02:26:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220109/</guid>
+      <description>概要  場所  Discoards   日時  2022/01/09 09:00 - 11:10   お題  「Hello World!」「変数」について勉強しよう。    詳細 準備  VisualStudio2019にログイン  MSのアカウントがない場合は作成  GitHubアカウントでもいけるようなので、GitHubアカウントを作成した。     ペアプロのためVisualStudio2019に「Live Share」を入れてもらう  参考：MSDOC   「Live Share」をつないでみる  自分はVSCODEで実施    本編 (未)とあるところは説明しきれなかったところ。
+Hello World! Hello World /* * プログラム作成、実行、確認のプロセスを知る */ void Start() { // &amp;#34;Hello World!&amp;#34;を表示  Debug.Log(&amp;#34;Hello World!&amp;#34;); } 複数行で実行 /* * プログラムは上から順番に実行される * 表示する中身の数字は関係ない */ void Start() { Debug.</description>
+    </item>
+    
     <item>
       <title>Kickoff</title>
       <link>https://kkspassepied.github.io/blog/posts/20211226/</link>
