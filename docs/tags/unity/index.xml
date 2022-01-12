@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 09 Jan 2022 02:26:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 14:26:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第二回「条件分岐」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220112/</link>
+      <pubDate>Wed, 12 Jan 2022 14:26:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220112/</guid>
+      <description>概要  場所  Discoards   日時  2022/01/12 22:00 - 23:18   お題  「変数」の復習+α。 「条件分岐」について学んでみよう。    詳細 前回の復習 変数の扱い void Start() { // 問題1 ：int型の変数shukakuを定義し、尻尾の数(1)を代入しよう  // ヒント：宣言の仕方 -&amp;gt; 型 変数名(shukaku);  // ：代入の仕方 -&amp;gt; 変数名(shukaku) = 尻尾の数(1);  // 問題2 ：問題1で代入したshukakuの値をコンソールに表示しよう  // ヒント：コンソールに表示するときは、Debug.Logを使う  } エラーの修正  値を未代入 値に異なる型を代入  void Start() { // 問題3 ：intの変数kisameを定義したが、プログラミングでエラーが出てしまった。  // 上手く表示されるように修正しよう。  // ヒント：変数の宣言しかしていない場合、コンピュータは何を表示していいのか分からない。  int kisame; Debug.</description>
+    </item>
+    
     <item>
       <title>第一回「Hello World」「変数」</title>
       <link>https://kkspassepied.github.io/blog/posts/20220109/</link>

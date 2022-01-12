@@ -6,8 +6,168 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 09 Jan 2022 02:26:00 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 12 Jan 2022 14:26:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第二回「条件分岐」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220112/</link>
+			<pubDate>Wed, 12 Jan 2022 14:26:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220112/</guid>
+			<description>概要  場所  Discoards   日時  2022/01/12 22:00 - 23:18   お題  「変数」の復習+α。 「条件分岐」について学んでみよう。    詳細 前回の復習 変数の扱い void Start() { // 問題1 ：int型の変数shukakuを定義し、尻尾の数(1)を代入しよう  // ヒント：宣言の仕方 -&amp;gt; 型 変数名(shukaku);  // ：代入の仕方 -&amp;gt; 変数名(shukaku) = 尻尾の数(1);  // 問題2 ：問題1で代入したshukakuの値をコンソールに表示しよう  // ヒント：コンソールに表示するときは、Debug.Logを使う  } エラーの修正  値を未代入 値に異なる型を代入  void Start() { // 問題3 ：intの変数kisameを定義したが、プログラミングでエラーが出てしまった。  // 上手く表示されるように修正しよう。  // ヒント：変数の宣言しかしていない場合、コンピュータは何を表示していいのか分からない。  int kisame; Debug.</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/01/12 22:00 - 23:18</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「変数」の復習+α。</li>
+<li>「条件分岐」について学んでみよう。</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="前回の復習">前回の復習</h3>
+<h4 id="変数の扱い">変数の扱い</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="c1">// 問題1 ：int型の変数shukakuを定義し、尻尾の数(1)を代入しよう
+</span><span class="c1"></span>      <span class="c1">// ヒント：宣言の仕方 -&gt; 型 変数名(shukaku);
+</span><span class="c1"></span>      <span class="c1">//       ：代入の仕方 -&gt; 変数名(shukaku) = 尻尾の数(1);
+</span><span class="c1"></span>
+      <span class="c1">// 問題2 ：問題1で代入したshukakuの値をコンソールに表示しよう
+</span><span class="c1"></span>      <span class="c1">// ヒント：コンソールに表示するときは、Debug.Logを使う
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="エラーの修正">エラーの修正</h4>
+<ul>
+<li>値を未代入</li>
+<li>値に異なる型を代入</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="c1">// 問題3 ：intの変数kisameを定義したが、プログラミングでエラーが出てしまった。
+</span><span class="c1"></span>      <span class="c1">//         上手く表示されるように修正しよう。
+</span><span class="c1"></span>      <span class="c1">// ヒント：変数の宣言しかしていない場合、コンピュータは何を表示していいのか分からない。
+</span><span class="c1"></span>      <span class="kt">int</span> <span class="n">kisame</span><span class="p">;</span>
+      <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">kisame</span><span class="p">);</span>
+
+      <span class="c1">// 問題4 ：intの変数sasukeを定義し、サスケの名前を表示したかったがエラーが出てしまった。
+</span><span class="c1"></span>      <span class="c1">//       : 上手く表示されるように修正しよう。
+</span><span class="c1"></span>      <span class="c1">// ヒント：intには数字しかいれられない
+</span><span class="c1"></span>      <span class="c1">//       ：文字列(&#34;サスケ&#34;の部分)を代入するにはstring型を使う
+</span><span class="c1"></span>      <span class="kt">int</span> <span class="n">sasuke</span><span class="p">;</span>
+      <span class="n">sasuke</span> <span class="p">=</span> <span class="s">&#34;サスケ&#34;</span><span class="p">;</span>
+      <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">sasuke</span><span class="p">);</span>
+
+    <span class="p">}</span>
+</code></pre></div><h4 id="前回伝え忘れてたポイント">前回伝え忘れてたポイント</h4>
+<ul>
+<li>宣言と代入を同時に書ける</li>
+<li>変数同士で計算ができる</li>
+<li>文字列も足し算ができる</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+      <span class="c1">// 問題5 ：intの変数matatabiを定義し、尻尾の数(2)を代入しよう
+</span><span class="c1"></span>      <span class="c1">//       : 宣言と代入を同時に行い、1行で表現すること
+</span><span class="c1"></span>      <span class="c1">// ヒント：shukakuの場合は以下のように書ける
+</span><span class="c1"></span>      <span class="c1">//       ：int shukaku = 1;
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題6 ：以下に尾獣の尻尾の数を定義した
+</span><span class="c1"></span>        <span class="c1">//       : 変数tailsに、尾獣の尻尾の合計本数を代入しよう
+</span><span class="c1"></span>        <span class="c1">// ヒント：変数 + 変数で足し算ができる
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">shukaku</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">matatabi</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">isobu</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">songoku</span> <span class="p">=</span> <span class="m">4</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">kokuou</span> <span class="p">=</span> <span class="m">5</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">saiken</span> <span class="p">=</span> <span class="m">6</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">chomei</span> <span class="p">=</span> <span class="m">7</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">gyuki</span> <span class="p">=</span> <span class="m">8</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">kurama</span> <span class="p">=</span> <span class="m">9</span><span class="p">;</span>
+
+        <span class="kt">int</span> <span class="n">tails</span><span class="p">;</span>
+        <span class="n">tails</span> <span class="p">=</span> <span class="p">????????????</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">tails</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題7 ：以下にナルトのセリフ文字列serifuを定義して表示させたい
+</span><span class="c1"></span>        <span class="c1">//       : 変数eと変数sasukeを使って、「サスケェ・・・」というセリフを完成させよう
+</span><span class="c1"></span>        <span class="c1">// ヒント：変数 + 変数で文字列を合体できる
+</span><span class="c1"></span>        <span class="kt">string</span> <span class="n">e</span> <span class="p">=</span> <span class="s">&#34;ェ・・・&#34;</span><span class="p">;</span>
+        <span class="kt">string</span> <span class="n">sasuke</span> <span class="p">=</span> <span class="s">&#34;サスケ&#34;</span><span class="p">;</span>
+
+        <span class="kt">string</span> <span class="n">serifu</span><span class="p">;</span>
+        <span class="n">serifu</span> <span class="p">=</span> <span class="p">????????????</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">serifu</span><span class="p">);</span>
+    <span class="p">}</span>
+</code></pre></div><h3 id="条件分岐">条件分岐</h3>
+<h4 id="if文">if文</h4>
+<ul>
+<li>プログラムでは場合によって、実行させたい処理が変わる場合がある</li>
+<li>ゲームで敵を攻撃したとして
+<ul>
+<li>HPが0になった場合 -&gt; 相手は倒れる(ﾃﾃﾃﾃｰ)</li>
+<li>HPが0にならなかった場合 -&gt; 相手はそのまま</li>
+</ul>
+</li>
+<li>「もし○○だったらxxしたい」そういうときに使うのがif文</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題8 ：????にifの条件を書き込んで、ジンオウガをやっつけよう！
+</span><span class="c1"></span>        <span class="c1">// ヒント：zinogre_hpからdamegeを引いて0以下になったら相手は倒れる
+</span><span class="c1"></span>        <span class="c1">//        if(変数A &lt; 変数B)  : 変数Bが大きい場合という条件になる
+</span><span class="c1"></span>        <span class="c1">//        if(変数A == 変数B) : 変数Aと変数Bが等しい場合という条件になる
+</span><span class="c1"></span>        <span class="c1">//        if(変数A == 0)     : 変数Aと0が等しい場合という条件になる
+</span><span class="c1"></span>        <span class="c1">//        if(変数A &lt;= 0)     : 変数Aが0以下という条件になる
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="m">500</span><span class="p">;</span>    <span class="c1">// ジンオウガのHP
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">damege</span>     <span class="p">=</span> <span class="m">500</span><span class="p">;</span>    <span class="c1">// 攻撃によるダメージ
+</span><span class="c1"></span>
+        <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="n">zinogre_hp</span> <span class="p">-</span> <span class="n">damege</span><span class="p">;</span>
+        <span class="c1">// zinogre_hp -= damege;
+</span><span class="c1"></span>        <span class="c1">// でも同じ意味になります！
+</span><span class="c1"></span>        <span class="k">if</span><span class="p">(??????????){</span>
+          <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガをやっつけた！&#34;</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><h3 id="ポイント">ポイント</h3>
+<ul>
+<li><code>kisame</code>に好きな値を入れてもらったら迷わず<code>0</code>だったので(　´∀｀)bｸﾞｯ!
+<ul>
+<li>尾を持たない尾獣などと呼ばれていましてね・・・。</li>
+</ul>
+</li>
+<li><code>zinogre_hp = zinogre_hp - damege;</code>の表現がピンとこない
+<ul>
+<li>数学的な式として捉えてしまうと500 = 0で矛盾になってしまう
+<ul>
+<li><code>=</code>はイコールではなく代入</li>
+<li>プログラムでのイコールは<code>==</code></li>
+</ul>
+</li>
+<li><code>zinogre_hp -= damege;</code>は一旦忘れてもらった</li>
+</ul>
+</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2021/01/16 予定</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第一回「Hello World」「変数」</title>
