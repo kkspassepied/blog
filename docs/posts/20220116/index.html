@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#494f5c">
+	<meta name="msapplication-TileColor" content="#494f5c">
+<meta itemprop="name" content="第三回「条件分岐２」">
+<meta itemprop="description" content="概要  場所  Discoards   日時  2022/01/16 10:00 - 12:18   お題  「変数」の復習 「条件分岐」の復習 いろんな「条件分岐」    詳細 前回の復習 書いてみよう void Start() { // 問題1 ：int型の変数rathian_hpを定義し、5000を代入しよう。(1行で表現しよう)  // 問題2 ：string型の変数message_1を定義し、&#34;リオレウスをやっつけた！&#34;を代入しよう。(1行で表現しよう)  // 問題3 ：変数message_1をコンソールに表示しよう  // 問題4 ：変数rathian_hpがもし0以下の数字だったら、変数message_1をコンソールに表示する条件文を書こう。  // ヒント : if( rathian_hp ?? 0 ){  // ???????????????????????;  // }  } if文続き void Start() { // 問題5 ：条件に当てはまる場合は○○、当てはまらない場合はxxとしたい場合、elseを使う  // これを使って相手を倒せなかった場合に「まだまだ元気だ！」を表示させるようにしよう。  // 実行する度にRandom."><meta itemprop="datePublished" content="2022-01-16T01:26:00+00:00" />
+<meta itemprop="dateModified" content="2022-01-16T01:26:00+00:00" />
+<meta itemprop="wordCount" content="303">
+<meta itemprop="keywords" content="ActivityLog,Game,Unity," /><meta property="og:title" content="第三回「条件分岐２」" />
+<meta property="og:description" content="概要  場所  Discoards   日時  2022/01/16 10:00 - 12:18   お題  「変数」の復習 「条件分岐」の復習 いろんな「条件分岐」    詳細 前回の復習 書いてみよう void Start() { // 問題1 ：int型の変数rathian_hpを定義し、5000を代入しよう。(1行で表現しよう)  // 問題2 ：string型の変数message_1を定義し、&#34;リオレウスをやっつけた！&#34;を代入しよう。(1行で表現しよう)  // 問題3 ：変数message_1をコンソールに表示しよう  // 問題4 ：変数rathian_hpがもし0以下の数字だったら、変数message_1をコンソールに表示する条件文を書こう。  // ヒント : if( rathian_hp ?? 0 ){  // ???????????????????????;  // }  } if文続き void Start() { // 問題5 ：条件に当てはまる場合は○○、当てはまらない場合はxxとしたい場合、elseを使う  // これを使って相手を倒せなかった場合に「まだまだ元気だ！」を表示させるようにしよう。  // 実行する度にRandom." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kkspassepied.github.io/blog/posts/20220116/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-01-16T01:26:00+00:00" />
+<meta property="article:modified_time" content="2022-01-16T01:26:00+00:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="第三回「条件分岐２」"/>
+<meta name="twitter:description" content="概要  場所  Discoards   日時  2022/01/16 10:00 - 12:18   お題  「変数」の復習 「条件分岐」の復習 いろんな「条件分岐」    詳細 前回の復習 書いてみよう void Start() { // 問題1 ：int型の変数rathian_hpを定義し、5000を代入しよう。(1行で表現しよう)  // 問題2 ：string型の変数message_1を定義し、&#34;リオレウスをやっつけた！&#34;を代入しよう。(1行で表現しよう)  // 問題3 ：変数message_1をコンソールに表示しよう  // 問題4 ：変数rathian_hpがもし0以下の数字だったら、変数message_1をコンソールに表示する条件文を書こう。  // ヒント : if( rathian_hp ?? 0 ){  // ???????????????????????;  // }  } if文続き void Start() { // 問題5 ：条件に当てはまる場合は○○、当てはまらない場合はxxとしたい場合、elseを使う  // これを使って相手を倒せなかった場合に「まだまだ元気だ！」を表示させるようにしよう。  // 実行する度にRandom."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://kkspassepied.github.io/blog/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://kkspassepied.github.io/blog/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://kkspassepied.github.io/blog/favicon-16x16.png">
+	<link rel="manifest" href="https://kkspassepied.github.io/blog/site.webmanifest">
+	<link rel="mask-icon" href="https://kkspassepied.github.io/blog/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="https://kkspassepied.github.io/blog/favicon.ico">
+
+	<title>第三回「条件分岐２」</title>
+	<link rel="stylesheet" href="https://kkspassepied.github.io/blog/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://kkspassepied.github.io/blog/">Activity Logs</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://kkspassepied.github.io/blog/posts/">Posts</a>
+				<a href="https://kkspassepied.github.io/blog/about-hugo/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://twitter.com/" target="_blank" rel="noopener me" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://instagram.com/" target="_blank" rel="noopener me" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a><a href="https://github.com/kkspassepied/" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://kkspassepied.github.io/blog/posts/">Posts</a></li>
+			<li><a href="https://kkspassepied.github.io/blog/about-hugo/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Jan 16, 2022</span></div>
+				<h1>第三回「条件分岐２」</h1>
+			</header>
+			<div class="content">
+				<h2 id="概要">概要<a href="#概要" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/01/16 10:00 - 12:18</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「変数」の復習</li>
+<li>「条件分岐」の復習</li>
+<li>いろんな「条件分岐」</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細<a href="#詳細" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
+<h3 id="前回の復習">前回の復習<a href="#前回の復習" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h4 id="書いてみよう">書いてみよう<a href="#書いてみよう" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題1 ：int型の変数rathian_hpを定義し、5000を代入しよう。(1行で表現しよう)
+</span><span class="c1"></span>
+        <span class="c1">// 問題2 ：string型の変数message_1を定義し、&#34;リオレウスをやっつけた！&#34;を代入しよう。(1行で表現しよう)
+</span><span class="c1"></span>
+        <span class="c1">// 問題3 ：変数message_1をコンソールに表示しよう
+</span><span class="c1"></span>
+        <span class="c1">// 問題4 ：変数rathian_hpがもし0以下の数字だったら、変数message_1をコンソールに表示する条件文を書こう。
+</span><span class="c1"></span>        <span class="c1">// ヒント : if( rathian_hp ?? 0 ){
+</span><span class="c1"></span>        <span class="c1">//              ???????????????????????;
+</span><span class="c1"></span>        <span class="c1">//          }
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="if文続き">if文続き<a href="#if文続き" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題5 ：条件に当てはまる場合は○○、当てはまらない場合はxxとしたい場合、elseを使う
+</span><span class="c1"></span>        <span class="c1">//         これを使って相手を倒せなかった場合に「まだまだ元気だ！」を表示させるようにしよう。
+</span><span class="c1"></span>        <span class="c1">//         実行する度にRandom.Rangeでダメージ値を300 - 600 の間でランダムに設定する
+</span><span class="c1"></span>        <span class="c1">//         複数回実行してすべての条件に入ることを確認してみよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="m">500</span><span class="p">;</span>                       <span class="c1">// ジンオウガのHP
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">300</span><span class="p">,</span> <span class="m">600</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>    <span class="c1">// 攻撃によるダメージ
+</span><span class="c1"></span>
+        <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="n">zinogre_hp</span> <span class="p">-</span> <span class="n">damage</span><span class="p">;</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">damage</span><span class="p">+</span><span class="s">&#34;のダメージを与えた！&#34;</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガの残りHPは&#34;</span><span class="p">+</span><span class="n">zinogre_hp</span><span class="p">+</span><span class="s">&#34;だ！&#34;</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガをやっつけた！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガはまだまだ元気だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題6 ：else文に慣れよう
+</span><span class="c1"></span>        <span class="c1">//         お肉が上手く焼けなかった時に、&#34;コゲ肉になった・・・&#34;を表示しよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">oniku_yaketa</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>        <span class="c1">// お肉が焼けたかどうか(0 か 1ランダム)
+</span><span class="c1"></span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">oniku_yaketa</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;上手に焼けました！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題7 ：３つ以上の分岐を作りたくなる時がある
+</span><span class="c1"></span>        <span class="c1">//         例えばモンハンではHPを0にすると倒せるほかに、HPが少なくなると「捕獲可能」という状態になる
+</span><span class="c1"></span>        <span class="c1">//         体力が100未満になると捕獲可能になるとした場合の条件分岐は以下のように書ける
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="m">500</span><span class="p">;</span>                       <span class="c1">// ジンオウガのHP
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">300</span><span class="p">,</span> <span class="m">600</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>    <span class="c1">// 攻撃によるダメージ
+</span><span class="c1"></span>
+        <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="n">zinogre_hp</span> <span class="p">-</span> <span class="n">damage</span><span class="p">;</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">damage</span><span class="p">+</span><span class="s">&#34;のダメージを与えた！&#34;</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガの残りHPは&#34;</span><span class="p">+</span><span class="n">zinogre_hp</span><span class="p">+</span><span class="s">&#34;だ！&#34;</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガをやっつけた！&#34;</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;</span> <span class="m">100</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガは捕獲可能だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガはまだまだ元気だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題8：else if文に慣れよう
+</span><span class="c1"></span>        <span class="c1">//        oniku_yaketaはランダムに0 - 7 が代入される
+</span><span class="c1"></span>        <span class="c1">//          0の時 : &#34;生肉だ・・・&#34;
+</span><span class="c1"></span>        <span class="c1">//          1の時 : &#34;生焼け肉だ・・・&#34;
+</span><span class="c1"></span>        <span class="c1">//          2の時 : &#34;上手に焼けました！&#34;
+</span><span class="c1"></span>        <span class="c1">//          3の時 : &#34;ウルトラ上手に焼けました！&#34;
+</span><span class="c1"></span>        <span class="c1">// 4, 5, 6, 7の時 : &#34;コゲ肉だ・・・&#34;
+</span><span class="c1"></span>        <span class="c1">//        に分岐するif文を書いてみよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">oniku_yaketa</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">7</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>        <span class="c1">// お肉の焼け具合(0 - 7のランダム)
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題9：if文の条件の書き方について勉強しよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">ginogre_hp</span> <span class="p">=</span> <span class="m">5000</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">ginogre_hp</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガをやっつけた！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// ジンオウガを捕獲したい場合はif文でどう書ける？
+</span><span class="c1"></span>        <span class="c1">//  - HPが100未満になる
+</span><span class="c1"></span>        <span class="c1">//  - 罠にかけている
+</span><span class="c1"></span>        <span class="c1">//  - 捕獲用麻酔玉を２つあてる
+</span><span class="c1"></span>        <span class="c1">// ヒント: if( ginogre_hp &lt; 100 &amp;&amp; traping == 1 ){
+</span><span class="c1"></span>        <span class="c1">//             hogehoge();
+</span><span class="c1"></span>        <span class="c1">//         }
+</span><span class="c1"></span>        <span class="c1">//         &amp;&amp;で条件を複数つなげられる
+</span><span class="c1"></span>        <span class="n">ginogre_hp</span> <span class="p">=</span> <span class="m">20</span><span class="p">;</span>    <span class="c1">// 20 -&gt; ジンオウガのHPが20しかない
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">trapping</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>   <span class="c1">// 1  -&gt; 罠にかかっている 
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">masui</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>      <span class="c1">// 2  -&gt; 麻酔玉を２コ当てた
+</span><span class="c1"></span>
+        <span class="k">if</span><span class="p">(</span><span class="n">ginogre_hp</span> <span class="p">&lt;</span> <span class="m">100</span> <span class="p">&amp;&amp;</span> <span class="n">trapping</span> <span class="p">==</span> <span class="m">1</span> <span class="p">&amp;&amp;</span> <span class="n">masui</span> <span class="p">==</span> <span class="m">2</span><span class="p">){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガを捕獲した！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="ポイント">ポイント<a href="#ポイント" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<ul>
+<li>今回は特筆するとこは特になかった
+<ul>
+<li>スムースな感じがうれしい</li>
+</ul>
+</li>
+</ul>
+<h3 id="次回">次回<a href="#次回" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<p>2021/01/19 予定</p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://kkspassepied.github.io/blog/tags/activitylog">ActivityLog</a></span><span class="tag"><a href="https://kkspassepied.github.io/blog/tags/game">Game</a></span><span class="tag"><a href="https://kkspassepied.github.io/blog/tags/unity">Unity</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>303 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2022-01-16 10:26 &#43;0900</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="prev-post" href="https://kkspassepied.github.io/blog/posts/20220112/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>第二回「条件分岐」</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2022 <a href="https://kkspassepied.github.io/blog/">John Doe</a> &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://kkspassepied.github.io/blog/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://kkspassepied.github.io/blog/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

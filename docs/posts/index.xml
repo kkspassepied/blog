@@ -6,8 +6,162 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 12 Jan 2022 14:26:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 16 Jan 2022 01:26:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第三回「条件分岐２」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220116/</link>
+			<pubDate>Sun, 16 Jan 2022 01:26:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220116/</guid>
+			<description>概要  場所  Discoards   日時  2022/01/16 10:00 - 12:18   お題  「変数」の復習 「条件分岐」の復習 いろんな「条件分岐」    詳細 前回の復習 書いてみよう void Start() { // 問題1 ：int型の変数rathian_hpを定義し、5000を代入しよう。(1行で表現しよう)  // 問題2 ：string型の変数message_1を定義し、&amp;#34;リオレウスをやっつけた！&amp;#34;を代入しよう。(1行で表現しよう)  // 問題3 ：変数message_1をコンソールに表示しよう  // 問題4 ：変数rathian_hpがもし0以下の数字だったら、変数message_1をコンソールに表示する条件文を書こう。  // ヒント : if( rathian_hp ?? 0 ){  // ???????????????????????;  // }  } if文続き void Start() { // 問題5 ：条件に当てはまる場合は○○、当てはまらない場合はxxとしたい場合、elseを使う  // これを使って相手を倒せなかった場合に「まだまだ元気だ！」を表示させるようにしよう。  // 実行する度にRandom.</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/01/16 10:00 - 12:18</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「変数」の復習</li>
+<li>「条件分岐」の復習</li>
+<li>いろんな「条件分岐」</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="前回の復習">前回の復習</h3>
+<h4 id="書いてみよう">書いてみよう</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題1 ：int型の変数rathian_hpを定義し、5000を代入しよう。(1行で表現しよう)
+</span><span class="c1"></span>
+        <span class="c1">// 問題2 ：string型の変数message_1を定義し、&#34;リオレウスをやっつけた！&#34;を代入しよう。(1行で表現しよう)
+</span><span class="c1"></span>
+        <span class="c1">// 問題3 ：変数message_1をコンソールに表示しよう
+</span><span class="c1"></span>
+        <span class="c1">// 問題4 ：変数rathian_hpがもし0以下の数字だったら、変数message_1をコンソールに表示する条件文を書こう。
+</span><span class="c1"></span>        <span class="c1">// ヒント : if( rathian_hp ?? 0 ){
+</span><span class="c1"></span>        <span class="c1">//              ???????????????????????;
+</span><span class="c1"></span>        <span class="c1">//          }
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="if文続き">if文続き</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題5 ：条件に当てはまる場合は○○、当てはまらない場合はxxとしたい場合、elseを使う
+</span><span class="c1"></span>        <span class="c1">//         これを使って相手を倒せなかった場合に「まだまだ元気だ！」を表示させるようにしよう。
+</span><span class="c1"></span>        <span class="c1">//         実行する度にRandom.Rangeでダメージ値を300 - 600 の間でランダムに設定する
+</span><span class="c1"></span>        <span class="c1">//         複数回実行してすべての条件に入ることを確認してみよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="m">500</span><span class="p">;</span>                       <span class="c1">// ジンオウガのHP
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">300</span><span class="p">,</span> <span class="m">600</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>    <span class="c1">// 攻撃によるダメージ
+</span><span class="c1"></span>
+        <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="n">zinogre_hp</span> <span class="p">-</span> <span class="n">damage</span><span class="p">;</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">damage</span><span class="p">+</span><span class="s">&#34;のダメージを与えた！&#34;</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガの残りHPは&#34;</span><span class="p">+</span><span class="n">zinogre_hp</span><span class="p">+</span><span class="s">&#34;だ！&#34;</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガをやっつけた！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガはまだまだ元気だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題6 ：else文に慣れよう
+</span><span class="c1"></span>        <span class="c1">//         お肉が上手く焼けなかった時に、&#34;コゲ肉になった・・・&#34;を表示しよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">oniku_yaketa</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">1</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>        <span class="c1">// お肉が焼けたかどうか(0 か 1ランダム)
+</span><span class="c1"></span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">oniku_yaketa</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;上手に焼けました！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題7 ：３つ以上の分岐を作りたくなる時がある
+</span><span class="c1"></span>        <span class="c1">//         例えばモンハンではHPを0にすると倒せるほかに、HPが少なくなると「捕獲可能」という状態になる
+</span><span class="c1"></span>        <span class="c1">//         体力が100未満になると捕獲可能になるとした場合の条件分岐は以下のように書ける
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="m">500</span><span class="p">;</span>                       <span class="c1">// ジンオウガのHP
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">300</span><span class="p">,</span> <span class="m">600</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>    <span class="c1">// 攻撃によるダメージ
+</span><span class="c1"></span>
+        <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="n">zinogre_hp</span> <span class="p">-</span> <span class="n">damage</span><span class="p">;</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">damage</span><span class="p">+</span><span class="s">&#34;のダメージを与えた！&#34;</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガの残りHPは&#34;</span><span class="p">+</span><span class="n">zinogre_hp</span><span class="p">+</span><span class="s">&#34;だ！&#34;</span><span class="p">);</span>
+
+        <span class="k">if</span> <span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガをやっつけた！&#34;</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;</span> <span class="m">100</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガは捕獲可能だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガはまだまだ元気だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題8：else if文に慣れよう
+</span><span class="c1"></span>        <span class="c1">//        oniku_yaketaはランダムに0 - 7 が代入される
+</span><span class="c1"></span>        <span class="c1">//          0の時 : &#34;生肉だ・・・&#34;
+</span><span class="c1"></span>        <span class="c1">//          1の時 : &#34;生焼け肉だ・・・&#34;
+</span><span class="c1"></span>        <span class="c1">//          2の時 : &#34;上手に焼けました！&#34;
+</span><span class="c1"></span>        <span class="c1">//          3の時 : &#34;ウルトラ上手に焼けました！&#34;
+</span><span class="c1"></span>        <span class="c1">// 4, 5, 6, 7の時 : &#34;コゲ肉だ・・・&#34;
+</span><span class="c1"></span>        <span class="c1">//        に分岐するif文を書いてみよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">oniku_yaketa</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">7</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>        <span class="c1">// お肉の焼け具合(0 - 7のランダム)
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題9：if文の条件の書き方について勉強しよう
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">ginogre_hp</span> <span class="p">=</span> <span class="m">5000</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">ginogre_hp</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガをやっつけた！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="c1">// ジンオウガを捕獲したい場合はif文でどう書ける？
+</span><span class="c1"></span>        <span class="c1">//  - HPが100未満になる
+</span><span class="c1"></span>        <span class="c1">//  - 罠にかけている
+</span><span class="c1"></span>        <span class="c1">//  - 捕獲用麻酔玉を２つあてる
+</span><span class="c1"></span>        <span class="c1">// ヒント: if( ginogre_hp &lt; 100 &amp;&amp; traping == 1 ){
+</span><span class="c1"></span>        <span class="c1">//             hogehoge();
+</span><span class="c1"></span>        <span class="c1">//         }
+</span><span class="c1"></span>        <span class="c1">//         &amp;&amp;で条件を複数つなげられる
+</span><span class="c1"></span>        <span class="n">ginogre_hp</span> <span class="p">=</span> <span class="m">20</span><span class="p">;</span>    <span class="c1">// 20 -&gt; ジンオウガのHPが20しかない
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">trapping</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>   <span class="c1">// 1  -&gt; 罠にかかっている 
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">masui</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>      <span class="c1">// 2  -&gt; 麻酔玉を２コ当てた
+</span><span class="c1"></span>
+        <span class="k">if</span><span class="p">(</span><span class="n">ginogre_hp</span> <span class="p">&lt;</span> <span class="m">100</span> <span class="p">&amp;&amp;</span> <span class="n">trapping</span> <span class="p">==</span> <span class="m">1</span> <span class="p">&amp;&amp;</span> <span class="n">masui</span> <span class="p">==</span> <span class="m">2</span><span class="p">){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガを捕獲した！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="ポイント">ポイント</h4>
+<ul>
+<li>今回は特筆するとこは特になかった
+<ul>
+<li>スムースな感じがうれしい</li>
+</ul>
+</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2021/01/19 予定</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第二回「条件分岐」</title>

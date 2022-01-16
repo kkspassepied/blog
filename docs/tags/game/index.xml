@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 12 Jan 2022 14:26:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Jan 2022 01:26:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第三回「条件分岐２」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220116/</link>
+      <pubDate>Sun, 16 Jan 2022 01:26:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220116/</guid>
+      <description>概要  場所  Discoards   日時  2022/01/16 10:00 - 12:18   お題  「変数」の復習 「条件分岐」の復習 いろんな「条件分岐」    詳細 前回の復習 書いてみよう void Start() { // 問題1 ：int型の変数rathian_hpを定義し、5000を代入しよう。(1行で表現しよう)  // 問題2 ：string型の変数message_1を定義し、&amp;#34;リオレウスをやっつけた！&amp;#34;を代入しよう。(1行で表現しよう)  // 問題3 ：変数message_1をコンソールに表示しよう  // 問題4 ：変数rathian_hpがもし0以下の数字だったら、変数message_1をコンソールに表示する条件文を書こう。  // ヒント : if( rathian_hp ?? 0 ){  // ???????????????????????;  // }  } if文続き void Start() { // 問題5 ：条件に当てはまる場合は○○、当てはまらない場合はxxとしたい場合、elseを使う  // これを使って相手を倒せなかった場合に「まだまだ元気だ！」を表示させるようにしよう。  // 実行する度にRandom.</description>
+    </item>
+    
     <item>
       <title>第二回「条件分岐」</title>
       <link>https://kkspassepied.github.io/blog/posts/20220112/</link>
