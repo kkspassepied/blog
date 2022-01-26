@@ -6,8 +6,125 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 16 Jan 2022 01:26:00 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 26 Jan 2022 12:49:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第四回「これまでの復習」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220123/</link>
+			<pubDate>Wed, 26 Jan 2022 12:49:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220123/</guid>
+			<description>概要  場所  Discoards   日時  2022/01/26 21:45 - 22:56   お題  「変数」の復習 「条件分岐」の復習    詳細 前回の復習 書いてみよう void Start() { // 問題1 : 以下の条件を満たすプログラムを作ろう！  // [変数]  // - int型の変数 zinogre_hpを定義し5000を代入  // - int型の変数 rathian_hpを定義し5000を代入  // [条件分岐]  // - zinogre_hpとrathian_hpが同じHPの場合  // * &amp;#34;HPは互角だ！&amp;#34;とコンソールに表示  // - どちらかのhpが高い場合  // * &amp;#34;XXXX(モンスター名)の方が強い！&amp;#34;とコンソールに表示  } void Start() { // 問題2 : 以下の条件を満たすプログラムを作ろう！  // [変数]  // - int型の変数 otoshianaを定義し1を代入  // - int型の変数 sibirewanaを定義し1を代入  // [条件分岐]  // - otoshianaが0の場合  // * 何も表示しない  // - otoshianaが0以外の場合  // * &amp;#34;罠にかかっている！&amp;#34;とコンソールに表示しよう  // - sibirewanaが0の場合  // * 何も表示しない  // - sibirewanaが0以外の場合  // * &amp;#34;罠にかかっている！&amp;#34;とコンソールに表示しよう  // [注意]  // * &amp;#34;罠にかかっている！&amp;#34;は１回だけコンソールに表示されるようにしよう  } void Start() { // 問題3 : 以下の条件を満たすプログラムを作ろう！  // [変数]  // - int型の変数 zinogre_hpを定義し50を代入  // - int型の変数 masuiを定義し2を代入  // - int型の変数 trappingを定義し1を代入  // - int型の変数 otoshianaを定義し1を代入  // - int型の変数 sibirewanaを定義し0を代入  // [条件分岐]  // - ziogre_hpが50未満かつ、masuiが2以上かつ、trappingが１と等しい、otoshianaまたはsibirewanaが1と等しい場合  // * &amp;#34;ジンオウガを捕獲した！&amp;#34;とコンソールに表示しよう  // - 条件を満たさない場合  // * &amp;#34;まだ捕獲できない！&amp;#34;とコンソールに表示しよう  } 間違い探し void Start() { // 問題4 : 以下の条件を満たすプログラムを作ったつもりだったが、  // 期待通りの出力が出なかった。間違いを指摘しよう。  // [変数]  // - int型の変数 zinogre_hpを定義し0を代入  // [条件分岐]  // - zinogre_hpが500未満の時  // * &amp;#34;ジンオウガは捕獲可能だ！&amp;#34;とコンソールに表示  // - zinogre_hpが0以下の時  // * &amp;#34;ジンオウガを倒した！&amp;#34;とコンソールに表示  // - それ以外の場合  // * &amp;#34;ジンオウガはまだまだ元気だ！&amp;#34;とコンソールに表示  // [期待]  // - ジンオウガのhpは0なので、&amp;#34;ジンオウガを倒した！&amp;#34;が表示されて欲しい  int zinogre_hp = 0; if(zinogre_hp &amp;lt; 500){ Debug.</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/01/26 21:45 - 22:56</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「変数」の復習</li>
+<li>「条件分岐」の復習</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="前回の復習">前回の復習</h3>
+<h4 id="書いてみよう">書いてみよう</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題1 : 以下の条件を満たすプログラムを作ろう！
+</span><span class="c1"></span>        <span class="c1">// [変数]
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 zinogre_hpを定義し5000を代入
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 rathian_hpを定義し5000を代入
+</span><span class="c1"></span>        <span class="c1">// [条件分岐]
+</span><span class="c1"></span>        <span class="c1">//   - zinogre_hpとrathian_hpが同じHPの場合
+</span><span class="c1"></span>        <span class="c1">//     * &#34;HPは互角だ！&#34;とコンソールに表示
+</span><span class="c1"></span>        <span class="c1">//   - どちらかのhpが高い場合
+</span><span class="c1"></span>        <span class="c1">//     * &#34;XXXX(モンスター名)の方が強い！&#34;とコンソールに表示
+</span><span class="c1"></span>        
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題2 : 以下の条件を満たすプログラムを作ろう！
+</span><span class="c1"></span>        <span class="c1">// [変数]
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 otoshianaを定義し1を代入
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 sibirewanaを定義し1を代入
+</span><span class="c1"></span>        <span class="c1">// [条件分岐]
+</span><span class="c1"></span>        <span class="c1">//   - otoshianaが0の場合
+</span><span class="c1"></span>        <span class="c1">//     * 何も表示しない
+</span><span class="c1"></span>        <span class="c1">//   - otoshianaが0以外の場合
+</span><span class="c1"></span>        <span class="c1">//     * &#34;罠にかかっている！&#34;とコンソールに表示しよう
+</span><span class="c1"></span>        <span class="c1">//   - sibirewanaが0の場合
+</span><span class="c1"></span>        <span class="c1">//     * 何も表示しない
+</span><span class="c1"></span>        <span class="c1">//   - sibirewanaが0以外の場合
+</span><span class="c1"></span>        <span class="c1">//     * &#34;罠にかかっている！&#34;とコンソールに表示しよう
+</span><span class="c1"></span>        <span class="c1">// [注意]
+</span><span class="c1"></span>        <span class="c1">//     * &#34;罠にかかっている！&#34;は１回だけコンソールに表示されるようにしよう
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題3 : 以下の条件を満たすプログラムを作ろう！
+</span><span class="c1"></span>        <span class="c1">// [変数]
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 zinogre_hpを定義し50を代入
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 masuiを定義し2を代入
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 trappingを定義し1を代入
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 otoshianaを定義し1を代入
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 sibirewanaを定義し0を代入
+</span><span class="c1"></span>        <span class="c1">// [条件分岐]
+</span><span class="c1"></span>        <span class="c1">//   - ziogre_hpが50未満かつ、masuiが2以上かつ、trappingが１と等しい、otoshianaまたはsibirewanaが1と等しい場合
+</span><span class="c1"></span>        <span class="c1">//     * &#34;ジンオウガを捕獲した！&#34;とコンソールに表示しよう
+</span><span class="c1"></span>        <span class="c1">//   - 条件を満たさない場合
+</span><span class="c1"></span>        <span class="c1">//     * &#34;まだ捕獲できない！&#34;とコンソールに表示しよう
+</span><span class="c1"></span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="間違い探し">間違い探し</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題4 : 以下の条件を満たすプログラムを作ったつもりだったが、
+</span><span class="c1"></span>        <span class="c1">//         期待通りの出力が出なかった。間違いを指摘しよう。
+</span><span class="c1"></span>        <span class="c1">// [変数]
+</span><span class="c1"></span>        <span class="c1">//   - int型の変数 zinogre_hpを定義し0を代入
+</span><span class="c1"></span>        <span class="c1">// [条件分岐]
+</span><span class="c1"></span>        <span class="c1">//   - zinogre_hpが500未満の時
+</span><span class="c1"></span>        <span class="c1">//     * &#34;ジンオウガは捕獲可能だ！&#34;とコンソールに表示
+</span><span class="c1"></span>        <span class="c1">//   - zinogre_hpが0以下の時
+</span><span class="c1"></span>        <span class="c1">//     * &#34;ジンオウガを倒した！&#34;とコンソールに表示
+</span><span class="c1"></span>        <span class="c1">//   - それ以外の場合
+</span><span class="c1"></span>        <span class="c1">//     * &#34;ジンオウガはまだまだ元気だ！&#34;とコンソールに表示
+</span><span class="c1"></span>        <span class="c1">// [期待]
+</span><span class="c1"></span>        <span class="c1">//   - ジンオウガのhpは0なので、&#34;ジンオウガを倒した！&#34;が表示されて欲しい
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;</span> <span class="m">500</span><span class="p">){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガは捕獲可能だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">zinogre_hp</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガを倒した！&#34;</span><span class="p">);</span>
+        <span class="p">}</span><span class="k">else</span><span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;ジンオウガはまだまだ元気だ！&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="ポイント">ポイント</h4>
+<ul>
+<li>久しぶりにやったがしっかり覚えていた</li>
+<li>条件分岐のバグを作りやすいところを重点的に
+<ul>
+<li>今回でif文はOKだと思った</li>
+</ul>
+</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2021/01/30 予定</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第三回「条件分岐２」</title>
