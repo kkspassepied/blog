@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 26 Jan 2022 12:49:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jan 2022 04:45:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第五回「ループ文」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220130/</link>
+      <pubDate>Sun, 30 Jan 2022 04:45:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220130/</guid>
+      <description>概要  場所  Discoards   日時  2022/01/30 10:00 - 12:56   お題  「ループ文」の作成    詳細 ループ文とは こんな形 void Start() { // 問題1 : for文の構成を知ろう  // 概要 : for文とは、条件を満たしている間同じ処理を繰り返す文です。  // : 書き方は、今までにやった「変数」と「条件分岐」を組み合わせたような感じ  // for([変数の定義]; [条件分岐の条件]; [変数の更新]){  for(int i = 0; i &amp;lt; 10; i++){ Debug.Log(&amp;#34;for文のループ&amp;#34;+i+&amp;#34;回目です&amp;#34;); } } ループでできること // 問題2 : for文でタイマーを作ってみよう  // ポイント : プログラムのカウントは0から行う事を意識  // ： 理解のためStartに実装、Updateの話はまた後  using System.</description>
+    </item>
+    
     <item>
       <title>第四回「これまでの復習」</title>
       <link>https://kkspassepied.github.io/blog/posts/20220123/</link>

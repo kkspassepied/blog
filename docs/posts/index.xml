@@ -6,8 +6,102 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 26 Jan 2022 12:49:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 30 Jan 2022 04:45:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第五回「ループ文」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220130/</link>
+			<pubDate>Sun, 30 Jan 2022 04:45:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220130/</guid>
+			<description>概要  場所  Discoards   日時  2022/01/30 10:00 - 12:56   お題  「ループ文」の作成    詳細 ループ文とは こんな形 void Start() { // 問題1 : for文の構成を知ろう  // 概要 : for文とは、条件を満たしている間同じ処理を繰り返す文です。  // : 書き方は、今までにやった「変数」と「条件分岐」を組み合わせたような感じ  // for([変数の定義]; [条件分岐の条件]; [変数の更新]){  for(int i = 0; i &amp;lt; 10; i++){ Debug.Log(&amp;#34;for文のループ&amp;#34;+i+&amp;#34;回目です&amp;#34;); } } ループでできること // 問題2 : for文でタイマーを作ってみよう  // ポイント : プログラムのカウントは0から行う事を意識  // ： 理解のためStartに実装、Updateの話はまた後  using System.</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/01/30 10:00 - 12:56</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「ループ文」の作成</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="ループ文とは">ループ文とは</h3>
+<h4 id="こんな形">こんな形</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題1 : for文の構成を知ろう
+</span><span class="c1"></span>        <span class="c1">// 概要  : for文とは、条件を満たしている間同じ処理を繰り返す文です。
+</span><span class="c1"></span>        <span class="c1">//       : 書き方は、今までにやった「変数」と「条件分岐」を組み合わせたような感じ
+</span><span class="c1"></span>        <span class="c1">//         for([変数の定義]; [条件分岐の条件]; [変数の更新]){
+</span><span class="c1"></span>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">10</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;for文のループ&#34;</span><span class="p">+</span><span class="n">i</span><span class="p">+</span><span class="s">&#34;回目です&#34;</span><span class="p">);</span>
+        <span class="p">}</span>        
+    <span class="p">}</span>
+</code></pre></div><h4 id="ループでできること">ループでできること</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="c1">// 問題2    : for文でタイマーを作ってみよう
+</span><span class="c1"></span>    <span class="c1">// ポイント : プログラムのカウントは0から行う事を意識
+</span><span class="c1"></span>    <span class="c1">//         ： 理解のためStartに実装、Updateの話はまた後
+</span><span class="c1"></span>    <span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">class</span> <span class="nc">Variable</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+    <span class="p">{</span>
+        <span class="k">async</span> <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">10</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+            <span class="p">{</span>
+                <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="m">1000</span><span class="p">);</span>
+                <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(+</span> <span class="p">(</span><span class="n">i</span> <span class="p">+</span> <span class="m">1</span><span class="p">)</span> <span class="p">+</span> <span class="s">&#34;秒経過しました&#34;</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="ループを途中で止めたい場合">ループを途中で止めたい場合</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="k">async</span> <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 問題3    : 制限時間内(60秒以内)にジンオウガを倒すループ分を作ろう
+</span><span class="c1"></span>        <span class="c1">// ポイント : 途中で倒したらbreakする！
+</span><span class="c1"></span>        <span class="kt">int</span> <span class="n">zinogre_hp</span> <span class="p">=</span> <span class="m">6000</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+
+        <span class="k">for</span> <span class="p">(</span> <span class="p">????????????????</span> <span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(+</span> <span class="p">(</span><span class="n">i</span><span class="p">+</span><span class="m">1</span><span class="p">)</span> <span class="p">+</span><span class="s">&#34;秒経過&#34;</span><span class="p">);</span>
+            <span class="n">damage</span> <span class="p">=</span> <span class="n">Random</span><span class="p">.</span><span class="n">Range</span><span class="p">(</span><span class="m">300</span><span class="p">,</span> <span class="m">600</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>    <span class="c1">// 攻撃によるダメージ
+</span><span class="c1"></span>            <span class="n">zinogre_hp</span> <span class="p">-=</span> <span class="n">damage</span><span class="p">;</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">damage</span> <span class="p">+</span> <span class="s">&#34;のダメージを与えた！ジンオウガの残りHPは&#34;</span> <span class="p">+</span> <span class="n">zinogre_hp</span> <span class="p">+</span> <span class="s">&#34;だ！&#34;</span><span class="p">);</span>
+
+            <span class="c1">// 倒せていたら「倒した」を出力してループを抜けよう
+</span><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span> <span class="p">????????????????</span> <span class="p">)</span>
+            <span class="p">{</span>
+
+            <span class="p">}</span>
+
+            <span class="k">await</span> <span class="n">Task</span><span class="p">.</span><span class="n">Delay</span><span class="p">(</span><span class="m">1000</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><h4 id="ポイント">ポイント</h4>
+<ul>
+<li>Start内でfor文を使ってゲームの処理を説明するのは、Unityとしてはあまり適切ではないが、とりあえず我慢。</li>
+<li>for文の()の中身は今までの組み合わせなのですんなり
+<ul>
+<li>更新式がループのあとで実行されるところを伝え忘れてた</li>
+<li>プログラムでは0から始めること</li>
+</ul>
+</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2021/02/06 予定</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第四回「これまでの復習」</title>
