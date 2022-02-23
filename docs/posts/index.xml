@@ -6,8 +6,92 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Fri, 11 Feb 2022 12:45:00 +0000</lastBuildDate>
+		<lastBuildDate>Wed, 23 Feb 2022 13:45:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第七回「メソッド」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220223/</link>
+			<pubDate>Wed, 23 Feb 2022 13:45:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220223/</guid>
+			<description>概要  場所  Discoards   日時  2022/02/11 21:50 - 22:50   お題  「メソッドの話」    詳細 メソッド // Start is called before the first frame update  void Start() { int damage = 0; damage = longSwardDamege(1, 1, 1); Debug.Log(damage); } // Update is called once per frame  void Update() { int damage = 0; damage = longSwardDamege(2, 1, 1); Debug.Log(damage); } // 引数  // 返り値  int longSwardDamege(int nikusitsu, int buki, int kireazi) { int damage = 0; // ダメージ計算（適当）  damage = buki * nikusitsu * kireazi; return damage; } ポイント  メソッドには引数と返り値がある 引数は変数のように型を定義する  定義した型の変数しか指定できない   メソッドは返り値を設定することができる  返り血ではない   StartとUpdateの役割の話もちょっとした  実はこれもメソッドなんだよ Startはシーン再生の最初に1回 Updateは繰り返し呼ばれる  詳細     丁度いい分量だったみたい  次回 2021/02/27 予定</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/02/11 21:50 - 22:50</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「メソッドの話」</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="メソッド">メソッド</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#">    <span class="c1">// Start is called before the first frame update
+</span><span class="c1"></span>    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+        <span class="n">damage</span> <span class="p">=</span> <span class="n">longSwardDamege</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">damage</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Update is called once per frame
+</span><span class="c1"></span>    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+        <span class="n">damage</span> <span class="p">=</span> <span class="n">longSwardDamege</span><span class="p">(</span><span class="m">2</span><span class="p">,</span> <span class="m">1</span><span class="p">,</span> <span class="m">1</span><span class="p">);</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">damage</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 引数
+</span><span class="c1"></span>    <span class="c1">// 返り値
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">longSwardDamege</span><span class="p">(</span><span class="kt">int</span> <span class="n">nikusitsu</span><span class="p">,</span> <span class="kt">int</span> <span class="n">buki</span><span class="p">,</span> <span class="kt">int</span> <span class="n">kireazi</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">int</span> <span class="n">damage</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+        <span class="c1">// ダメージ計算（適当）
+</span><span class="c1"></span>        <span class="n">damage</span> <span class="p">=</span> <span class="n">buki</span> <span class="p">*</span> <span class="n">nikusitsu</span> <span class="p">*</span> <span class="n">kireazi</span><span class="p">;</span>
+
+        <span class="k">return</span> <span class="n">damage</span><span class="p">;</span>
+    <span class="p">}</span>
+</code></pre></div><h3 id="ポイント">ポイント</h3>
+<ul>
+<li>メソッドには引数と返り値がある</li>
+<li>引数は変数のように型を定義する
+<ul>
+<li>定義した型の変数しか指定できない</li>
+</ul>
+</li>
+<li>メソッドは返り値を設定することができる
+<ul>
+<li>返り血ではない</li>
+</ul>
+</li>
+<li>StartとUpdateの役割の話もちょっとした
+<ul>
+<li>実はこれもメソッドなんだよ</li>
+<li>Startはシーン再生の最初に1回</li>
+<li>Updateは繰り返し呼ばれる
+<ul>
+<li><a href="https://docs.unity3d.com/ja/2018.4/Manual/ExecutionOrder.html">詳細</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>丁度いい分量だったみたい</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2021/02/27 予定</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第六回「ループ文２」</title>

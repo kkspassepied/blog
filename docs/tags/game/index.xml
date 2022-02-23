@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Fri, 11 Feb 2022 12:45:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Feb 2022 13:45:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/game/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第七回「メソッド」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220223/</link>
+      <pubDate>Wed, 23 Feb 2022 13:45:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220223/</guid>
+      <description>概要  場所  Discoards   日時  2022/02/11 21:50 - 22:50   お題  「メソッドの話」    詳細 メソッド // Start is called before the first frame update  void Start() { int damage = 0; damage = longSwardDamege(1, 1, 1); Debug.Log(damage); } // Update is called once per frame  void Update() { int damage = 0; damage = longSwardDamege(2, 1, 1); Debug.Log(damage); } // 引数  // 返り値  int longSwardDamege(int nikusitsu, int buki, int kireazi) { int damage = 0; // ダメージ計算（適当）  damage = buki * nikusitsu * kireazi; return damage; } ポイント  メソッドには引数と返り値がある 引数は変数のように型を定義する  定義した型の変数しか指定できない   メソッドは返り値を設定することができる  返り血ではない   StartとUpdateの役割の話もちょっとした  実はこれもメソッドなんだよ Startはシーン再生の最初に1回 Updateは繰り返し呼ばれる  詳細     丁度いい分量だったみたい  次回 2021/02/27 予定</description>
+    </item>
+    
     <item>
       <title>第六回「ループ文２」</title>
       <link>https://kkspassepied.github.io/blog/posts/20220211/</link>
