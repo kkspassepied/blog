@@ -6,16 +6,16 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Wed, 23 Feb 2022 13:45:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 27 Feb 2022 01:00:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
 		
 		<item>
-			<title>第七回「メソッド」</title>
-			<link>https://kkspassepied.github.io/blog/posts/20220223/</link>
-			<pubDate>Wed, 23 Feb 2022 13:45:00 +0000</pubDate>
+			<title>第八回「配列」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220227/</link>
+			<pubDate>Sun, 27 Feb 2022 01:00:00 +0000</pubDate>
 			
-			<guid>https://kkspassepied.github.io/blog/posts/20220223/</guid>
-			<description>概要  場所  Discoards   日時  2022/02/11 21:50 - 22:50   お題  「メソッドの話」    詳細 メソッド // Start is called before the first frame update  void Start() { int damage = 0; damage = longSwardDamege(1, 1, 1); Debug.Log(damage); } // Update is called once per frame  void Update() { int damage = 0; damage = longSwardDamege(2, 1, 1); Debug.Log(damage); } // 引数  // 返り値  int longSwardDamege(int nikusitsu, int buki, int kireazi) { int damage = 0; // ダメージ計算（適当）  damage = buki * nikusitsu * kireazi; return damage; } ポイント  メソッドには引数と返り値がある 引数は変数のように型を定義する  定義した型の変数しか指定できない   メソッドは返り値を設定することができる  返り血ではない   StartとUpdateの役割の話もちょっとした  実はこれもメソッドなんだよ Startはシーン再生の最初に1回 Updateは繰り返し呼ばれる  詳細     丁度いい分量だったみたい  次回 2021/02/27 予定</description>
+			<guid>https://kkspassepied.github.io/blog/posts/20220227/</guid>
+			<description>概要  場所  Discoards   日時  2022/02/27 10:00 - 10:50   お題  「配列の話」    詳細 配列 void Start() { // 変数 = 1個の箱  int box = 0; // 配列 = n個の箱  // プレイヤーの名前の配列  string[] player = new string[4]; player[0] = &amp;#34;極みさん&amp;#34;; player[1] = &amp;#34;ぱすぴえ&amp;#34;; player[2] = &amp;#34;player3&amp;#34;; player[3] = &amp;#34;player4&amp;#34;; // 何かしらの回数をカウントする配列（スリンガーの回数）  int[] slinger = new int[4]; slinger[0] = 42; // 極みさん  slinger[1] = 3; // ぱすぴえ  slinger[2] = 42; // player3  slinger[3] = 23; // player4  // 実際のゲーム中ではスリンガー数をカウントしておくイメージ  // 極みさん -&amp;gt; slinger[0]++;  // ぱすぴえ -&amp;gt; slinger[1]++;  // player3 -&amp;gt; slinger[2]++;  // player4 -&amp;gt; slinger[3]++;  // 問題：スリンガー回数が一番多い人を表示しましょう（ワールドのリザルト風）  // ヒント：player[x]とslinger[x]のxは対応してある  // step1 : slinger回数の最大の数を探して、変数に入れる  int max = 0; for(int i = 0; i &amp;lt; 4; i++){ if(xxxxxxxxxxxx) { max = slinger[i]; } } // step2 : 最大の数と同じslinger回数のひとを表示する  for (int i = 0; i &amp;lt; 4; i++){ if (xxxxxxxxxxxx){ Debug.</description>
 			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
 <ul>
 <li>場所
@@ -25,7 +25,91 @@
 </li>
 <li>日時
 <ul>
-<li>2022/02/11 21:50 - 22:50</li>
+<li>2022/02/27 10:00 - 10:50</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「配列の話」</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="配列">配列</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 変数 = 1個の箱
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">box</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+    <span class="c1">// 配列 = n個の箱
+</span><span class="c1"></span>    <span class="c1">// プレイヤーの名前の配列
+</span><span class="c1"></span>    <span class="kt">string</span><span class="p">[]</span> <span class="n">player</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[</span><span class="m">4</span><span class="p">];</span>
+    <span class="n">player</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;極みさん&#34;</span><span class="p">;</span>
+    <span class="n">player</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;ぱすぴえ&#34;</span><span class="p">;</span>
+    <span class="n">player</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;player3&#34;</span><span class="p">;</span>
+    <span class="n">player</span><span class="p">[</span><span class="m">3</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;player4&#34;</span><span class="p">;</span>
+    <span class="c1">// 何かしらの回数をカウントする配列（スリンガーの回数）
+</span><span class="c1"></span>    <span class="kt">int</span><span class="p">[]</span> <span class="n">slinger</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="m">4</span><span class="p">];</span>
+    <span class="n">slinger</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="m">42</span><span class="p">;</span>  <span class="c1">// 極みさん
+</span><span class="c1"></span>    <span class="n">slinger</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>   <span class="c1">// ぱすぴえ
+</span><span class="c1"></span>    <span class="n">slinger</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">=</span> <span class="m">42</span><span class="p">;</span>  <span class="c1">// player3
+</span><span class="c1"></span>    <span class="n">slinger</span><span class="p">[</span><span class="m">3</span><span class="p">]</span> <span class="p">=</span> <span class="m">23</span><span class="p">;</span>  <span class="c1">// player4
+</span><span class="c1"></span>
+    <span class="c1">// 実際のゲーム中ではスリンガー数をカウントしておくイメージ
+</span><span class="c1"></span>    <span class="c1">//  極みさん -&gt; slinger[0]++;
+</span><span class="c1"></span>    <span class="c1">//  ぱすぴえ -&gt; slinger[1]++;
+</span><span class="c1"></span>    <span class="c1">//  player3  -&gt; slinger[2]++;
+</span><span class="c1"></span>    <span class="c1">//  player4  -&gt; slinger[3]++;
+</span><span class="c1"></span>
+    <span class="c1">// 問題：スリンガー回数が一番多い人を表示しましょう（ワールドのリザルト風）
+</span><span class="c1"></span>    <span class="c1">// ヒント：player[x]とslinger[x]のxは対応してある
+</span><span class="c1"></span>
+    <span class="c1">// step1 : slinger回数の最大の数を探して、変数に入れる
+</span><span class="c1"></span>    <span class="kt">int</span> <span class="n">max</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">4</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">xxxxxxxxxxxx</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">max</span> <span class="p">=</span> <span class="n">slinger</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="c1">// step2 : 最大の数と同じslinger回数のひとを表示する
+</span><span class="c1"></span>    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">4</span><span class="p">;</span> <span class="n">i</span><span class="p">++){</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">xxxxxxxxxxxx</span><span class="p">){</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">player</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">+</span> <span class="s">&#34;のスリンガー回数は&#34;</span> <span class="p">+</span> <span class="n">slinger</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">+</span> <span class="s">&#34;回です&#34;</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="ポイント">ポイント</h3>
+<ul>
+<li>ちょっとモヤッとが残ってしまった
+<ul>
+<li>for文を2回すのが冗長に感じてしまう</li>
+<li>説明難しい</li>
+<li>次回も練習問題用意してみる</li>
+</ul>
+</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2022/03/02 予定</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>第七回「メソッド」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220223/</link>
+			<pubDate>Wed, 23 Feb 2022 13:45:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220223/</guid>
+			<description>概要  場所  Discoards   日時  2022/02/23 21:50 - 22:50   お題  「メソッドの話」    詳細 メソッド // Start is called before the first frame update  void Start() { int damage = 0; damage = longSwardDamege(1, 1, 1); Debug.Log(damage); } // Update is called once per frame  void Update() { int damage = 0; damage = longSwardDamege(2, 1, 1); Debug.Log(damage); } // 引数  // 返り値  int longSwardDamege(int nikusitsu, int buki, int kireazi) { int damage = 0; // ダメージ計算（適当）  damage = buki * nikusitsu * kireazi; return damage; } ポイント  メソッドには引数と返り値がある 引数は変数のように型を定義する  定義した型の変数しか指定できない   メソッドは返り値を設定することができる  返り血ではない   StartとUpdateの役割の話もちょっとした  実はこれもメソッドなんだよ Startはシーン再生の最初に1回 Updateは繰り返し呼ばれる  詳細     丁度いい分量だったみたい  次回 2022/02/27 予定</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/02/23 21:50 - 22:50</li>
 </ul>
 </li>
 <li>お題
@@ -89,7 +173,7 @@
 <li>丁度いい分量だったみたい</li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/02/27 予定</p>
+<p>2022/02/27 予定</p>
 ]]></content>
 		</item>
 		
@@ -183,7 +267,7 @@
 </li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/02/16 予定</p>
+<p>2022/02/16 予定</p>
 ]]></content>
 		</item>
 		
@@ -277,7 +361,7 @@
 </li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/02/06 予定</p>
+<p>2022/02/06 予定</p>
 ]]></content>
 		</item>
 		
@@ -394,7 +478,7 @@
 </li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/01/30 予定</p>
+<p>2022/01/30 予定</p>
 ]]></content>
 		</item>
 		
@@ -548,7 +632,7 @@
 </li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/01/19 予定</p>
+<p>2022/01/19 予定</p>
 ]]></content>
 		</item>
 		
@@ -708,7 +792,7 @@
 </li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/01/16 予定</p>
+<p>2022/01/16 予定</p>
 ]]></content>
 		</item>
 		
@@ -894,7 +978,7 @@ Hello World! Hello World /* * プログラム作成、実行、確認のプロ�
 <li>どういう値なのかを名前で説明することができる</li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/01/12 予定</p>
+<p>2022/01/12 予定</p>
 ]]></content>
 		</item>
 		
@@ -905,14 +989,14 @@ Hello World! Hello World /* * プログラム作成、実行、確認のプロ�
 			
 			<guid>https://kkspassepied.github.io/blog/posts/20211226/</guid>
 			<description>場所 Discoards
-日時 2021/12/26 19:50 - 21:55
+日時 2022/12/26 19:50 - 21:55
 お題 やってみたいこと決める。
 内容 候補  ゲーム作ってみる Web開発 スマートロックとか作ってみる AI作ってみる  共通の趣味だしゲームが興味持って取り組めそう。
-詳細  環境は「Unity」 参考書をベースにプログラミングの基礎を学ぶ 参考書を終えたら好きなゲーム作ってみる  宿題  GitHubのOrganizationを用意 参考書用意  次回 2021/01/09 予定</description>
+詳細  環境は「Unity」 参考書をベースにプログラミングの基礎を学ぶ 参考書を終えたら好きなゲーム作ってみる  宿題  GitHubのOrganizationを用意 参考書用意  次回 2022/01/09 予定</description>
 			<content type="html"><![CDATA[<h3 id="場所">場所</h3>
 <p>Discoards</p>
 <h3 id="日時">日時</h3>
-<p>2021/12/26 19:50 - 21:55</p>
+<p>2022/12/26 19:50 - 21:55</p>
 <h3 id="お題">お題</h3>
 <p>やってみたいこと決める。</p>
 <h3 id="内容">内容</h3>
@@ -936,7 +1020,7 @@ Hello World! Hello World /* * プログラム作成、実行、確認のプロ�
 <li>参考書用意</li>
 </ul>
 <h3 id="次回">次回</h3>
-<p>2021/01/09 予定</p>
+<p>2022/01/09 予定</p>
 ]]></content>
 		</item>
 		
