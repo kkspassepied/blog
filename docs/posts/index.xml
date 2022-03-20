@@ -6,8 +6,236 @@
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-		<lastBuildDate>Sun, 27 Feb 2022 01:00:00 +0000</lastBuildDate>
+		<lastBuildDate>Sun, 20 Mar 2022 05:37:00 +0000</lastBuildDate>
 		<atom:link href="https://kkspassepied.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>第十一回「演習３」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220320/</link>
+			<pubDate>Sun, 20 Mar 2022 05:37:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220320/</guid>
+			<description>概要  場所  Discoards   日時  2022/03/17 21:00 - 22:50   お題  「演習問題しましょ３」    詳細 演習 void Start() { // 問題  // ・貫通弾Lv1を60発所持している  // ・貫通弾Lv1を4発装填できるボウガンを使う  // スペースキーを押したとき「射撃」  // Rキーを押したときに「リロード」  // するプログラムを作ろう  // ## Step1 ## : 必要な変数を定義する  void Start() { // ## Step2 ## : 必要な変数を初期化する  } void Update() { if (Input.GetKeyDown(&amp;#34;space&amp;#34;)) { // ## Step3 ## : スペースキーを押したときの処理を追加する  // ・装填数が0の場合は&amp;#34;リロードしてください&amp;#34;を表示  // ・装填数 &amp;gt; 0の場合は、装填数を1つ消費した後、&amp;#34;発射！装填数残りxx発&amp;#34;を表示  } else if (Input.</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/03/17 21:00 - 22:50</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「演習問題しましょ３」</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="演習">演習</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 問題
+</span><span class="c1"></span>    <span class="c1">// ・貫通弾Lv1を60発所持している
+</span><span class="c1"></span>    <span class="c1">// ・貫通弾Lv1を4発装填できるボウガンを使う
+</span><span class="c1"></span>    <span class="c1">// スペースキーを押したとき「射撃」
+</span><span class="c1"></span>    <span class="c1">// Rキーを押したときに「リロード」
+</span><span class="c1"></span>    <span class="c1">// するプログラムを作ろう
+</span><span class="c1"></span>
+    <span class="c1">// ## Step1 ## : 必要な変数を定義する
+</span><span class="c1"></span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// ## Step2 ## : 必要な変数を初期化する
+</span><span class="c1"></span>
+    <span class="p">}</span>
+
+    <span class="k">void</span> <span class="n">Update</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="n">GetKeyDown</span><span class="p">(</span><span class="s">&#34;space&#34;</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="c1">// ## Step3 ## : スペースキーを押したときの処理を追加する
+</span><span class="c1"></span>            <span class="c1">// ・装填数が0の場合は&#34;リロードしてください&#34;を表示
+</span><span class="c1"></span>            <span class="c1">// ・装填数 &gt; 0の場合は、装填数を1つ消費した後、&#34;発射！装填数残りxx発&#34;を表示
+</span><span class="c1"></span>
+
+
+
+        <span class="p">}</span>
+        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="n">GetKeyDown</span><span class="p">(</span><span class="s">&#34;r&#34;</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="c1">// ## Step4 ## : rキーを押したときの処理を追加する
+</span><span class="c1"></span>            <span class="c1">// ・装填数が4(最大)の場合は&#34;リロード不要です&#34;を表示
+</span><span class="c1"></span>            <span class="c1">// ・装填数が4(最大)以外の場合は&#34;リロードしました -&gt; 貫通弾残りxx発&#34;を表示
+</span><span class="c1"></span>            <span class="c1">// ・リロードする貫通弾が残ってないときは&#34;弾切れです&#34;を表示
+</span><span class="c1"></span>            <span class="c1">// ※ 貫通弾の残弾が装填数より少ない時に注意！
+</span><span class="c1"></span>
+
+
+
+        <span class="p">}</span>
+    <span class="p">}</span>
+</code></pre></div><h3 id="ポイント">ポイント</h3>
+<ul>
+<li>やはりキー入力は動作確認が楽しくて良い
+<ul>
+<li>もっと早めに使えば良かった・・・</li>
+<li>しかし<code>Update</code>を使うと<code>for</code>文の例題が上手いこと思いつかない
+<ul>
+<li>実際にゲーム作りして<code>for</code>文を使うケースを知っておくべきだった</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>この課題だと、リロードを先に作らせた方がよい
+<ul>
+<li>発射が先だとリロードという変数が必要 or 更新されていることを意識しづらい</li>
+</ul>
+</li>
+<li>全部さらいきれなかったので、来週は今回の復習から</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2022/04/03 予定</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>第十回「演習２」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220310/</link>
+			<pubDate>Thu, 10 Mar 2022 13:00:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220310/</guid>
+			<description>概要  場所  Discoards   日時  2022/03/10 22:00 - 22:50   お題  「演習問題しましょ２」    詳細 演習 void Start() { void Start() { // 貫通弾Lv1を全弾撃つ過程で、以下を表示しよう  // 弾は1発ずつ発射 -&amp;gt; 装填数が０になったらリロード  // を繰り返します。  // ・貫通弾Lv1を60発所持している  // ・ライトボウガンには6発ずつ装填できる  // 1. &amp;#34;貫通弾は残りxx発です&amp;#34; (※所持数)  // 2. &amp;#34;装填数は残りxx発です&amp;#34; (※ライトボウガンに装填されている数)  // 3. 装填数 == 0 の時に&amp;#34;リロードします&amp;#34;  // ------------------------------------------------------------  /* 参考：前回のやつ for(int i = 50; i &amp;gt;= 0; i--){ Debug.</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/03/10 22:00 - 22:50</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「演習問題しましょ２」</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="演習">演習</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 貫通弾Lv1を全弾撃つ過程で、以下を表示しよう
+</span><span class="c1"></span>        <span class="c1">// 弾は1発ずつ発射 -&gt; 装填数が０になったらリロード
+</span><span class="c1"></span>        <span class="c1">// を繰り返します。
+</span><span class="c1"></span>        <span class="c1">// ・貫通弾Lv1を60発所持している
+</span><span class="c1"></span>        <span class="c1">// ・ライトボウガンには6発ずつ装填できる
+</span><span class="c1"></span>        <span class="c1">// 1. &#34;貫通弾は残りxx発です&#34; (※所持数)
+</span><span class="c1"></span>        <span class="c1">// 2. &#34;装填数は残りxx発です&#34; (※ライトボウガンに装填されている数)
+</span><span class="c1"></span>        <span class="c1">// 3. 装填数 == 0 の時に&#34;リロードします&#34;
+</span><span class="c1"></span>        <span class="c1">// ------------------------------------------------------------
+</span><span class="c1"></span>        <span class="cm">/* 参考：前回のやつ
+</span><span class="cm">            for(int i = 50; i &gt;= 0; i--){
+</span><span class="cm">                Debug.Log(&#34;強撃ビンは残り&#34; + i + &#34;発です&#34;); 
+</span><span class="cm">            }
+</span><span class="cm">        */</span>
+        <span class="kt">int</span> <span class="n">souten</span> <span class="p">=</span> <span class="m">6</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">60</span><span class="p">;</span> <span class="n">i</span> <span class="p">&gt;=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span><span class="p">--)</span> <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;貫通弾は残り&#34;</span> <span class="p">+</span> <span class="n">i</span> <span class="p">+</span> <span class="s">&#34;発です&#34;</span><span class="p">);</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;装填数は残り&#34;</span> <span class="p">+</span> <span class="n">souten</span> <span class="p">+</span> <span class="s">&#34;発です&#34;</span><span class="p">);</span>
+            <span class="n">souten</span><span class="p">--;</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">souten</span> <span class="p">==</span> <span class="m">0</span> <span class="p">&amp;&amp;</span> <span class="n">i</span> <span class="p">&gt;=</span> <span class="m">6</span> <span class="p">){</span>
+                <span class="n">Debug</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="s">&#34;リロードします&#34;</span><span class="p">);</span>
+                <span class="n">souten</span> <span class="p">=</span> <span class="m">6</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="cm">/*
+</span><span class="cm">貫通弾は残り1発です
+</span><span class="cm">装填数は残り1発です
+</span><span class="cm">
+</span><span class="cm">リロードします
+</span><span class="cm">貫通弾は残り0発です
+</span><span class="cm">装填数は残り6発です
+</span><span class="cm"> */</span>
+</code></pre></div><h3 id="ポイント">ポイント</h3>
+<ul>
+<li><code>if (souten == 0 &amp;&amp; i &gt;= 6 )</code>の<code>i</code>の判定
+<ul>
+<li>iが0の場合の出力がおかしくなる</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="c1">// リロードします
+</span><span class="c1">// 貫通弾は残り0発です
+</span><span class="c1">// 装填数は残り6発です
+</span></code></pre></div><ul>
+<li>「実際に動かしてみて考える」のサイクルを演習できました</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2022/03/13 予定</p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>第九回「演習」</title>
+			<link>https://kkspassepied.github.io/blog/posts/20220306/</link>
+			<pubDate>Sun, 06 Mar 2022 01:00:00 +0000</pubDate>
+			
+			<guid>https://kkspassepied.github.io/blog/posts/20220306/</guid>
+			<description>概要  場所  Discoards   日時  2022/03/06 10:00 - 10:50   お題  「演習問題しましょ」    詳細 演習 void Start() { // 強撃ビン × 50 撃てる弓がある  // for文で、1発ずつ撃って「残り○○発です」を表示するプログラムを作ってください。  // for(変数宣言；条件；変数更新) {  // 処理  // }  // if(条件){  // 処理  // }  } ポイント  ０から全部書いてもらう演習とした エラーが出たらその内容をチェックして修正するを繰り返してみた  次回 2022/03/10 予定</description>
+			<content type="html"><![CDATA[<h2 id="概要">概要</h2>
+<ul>
+<li>場所
+<ul>
+<li>Discoards</li>
+</ul>
+</li>
+<li>日時
+<ul>
+<li>2022/03/06 10:00 - 10:50</li>
+</ul>
+</li>
+<li>お題
+<ul>
+<li>「演習問題しましょ」</li>
+</ul>
+</li>
+</ul>
+<h2 id="詳細">詳細</h2>
+<h3 id="演習">演習</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="k">void</span> <span class="n">Start</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="c1">// 強撃ビン × 50 撃てる弓がある
+</span><span class="c1"></span>    <span class="c1">// for文で、1発ずつ撃って「残り○○発です」を表示するプログラムを作ってください。
+</span><span class="c1"></span>    <span class="c1">// for(変数宣言；条件；変数更新) {
+</span><span class="c1"></span>    <span class="c1">//     処理
+</span><span class="c1"></span>    <span class="c1">// }
+</span><span class="c1"></span>    <span class="c1">// if(条件){
+</span><span class="c1"></span>    <span class="c1">//    処理
+</span><span class="c1"></span>    <span class="c1">// }
+</span><span class="c1"></span>
+
+
+
+<span class="p">}</span>
+</code></pre></div><h3 id="ポイント">ポイント</h3>
+<ul>
+<li>０から全部書いてもらう演習とした</li>
+<li>エラーが出たらその内容をチェックして修正するを繰り返してみた</li>
+</ul>
+<h3 id="次回">次回</h3>
+<p>2022/03/10 予定</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>第八回「配列」</title>

@@ -7,7 +7,34 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Sun, 27 Feb 2022 01:00:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 20 Mar 2022 05:37:00 +0000</lastBuildDate><atom:link href="https://kkspassepied.github.io/blog/tags/unity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>第十一回「演習３」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220320/</link>
+      <pubDate>Sun, 20 Mar 2022 05:37:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220320/</guid>
+      <description>概要  場所  Discoards   日時  2022/03/17 21:00 - 22:50   お題  「演習問題しましょ３」    詳細 演習 void Start() { // 問題  // ・貫通弾Lv1を60発所持している  // ・貫通弾Lv1を4発装填できるボウガンを使う  // スペースキーを押したとき「射撃」  // Rキーを押したときに「リロード」  // するプログラムを作ろう  // ## Step1 ## : 必要な変数を定義する  void Start() { // ## Step2 ## : 必要な変数を初期化する  } void Update() { if (Input.GetKeyDown(&amp;#34;space&amp;#34;)) { // ## Step3 ## : スペースキーを押したときの処理を追加する  // ・装填数が0の場合は&amp;#34;リロードしてください&amp;#34;を表示  // ・装填数 &amp;gt; 0の場合は、装填数を1つ消費した後、&amp;#34;発射！装填数残りxx発&amp;#34;を表示  } else if (Input.</description>
+    </item>
+    
+    <item>
+      <title>第十回「演習２」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220310/</link>
+      <pubDate>Thu, 10 Mar 2022 13:00:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220310/</guid>
+      <description>概要  場所  Discoards   日時  2022/03/10 22:00 - 22:50   お題  「演習問題しましょ２」    詳細 演習 void Start() { void Start() { // 貫通弾Lv1を全弾撃つ過程で、以下を表示しよう  // 弾は1発ずつ発射 -&amp;gt; 装填数が０になったらリロード  // を繰り返します。  // ・貫通弾Lv1を60発所持している  // ・ライトボウガンには6発ずつ装填できる  // 1. &amp;#34;貫通弾は残りxx発です&amp;#34; (※所持数)  // 2. &amp;#34;装填数は残りxx発です&amp;#34; (※ライトボウガンに装填されている数)  // 3. 装填数 == 0 の時に&amp;#34;リロードします&amp;#34;  // ------------------------------------------------------------  /* 参考：前回のやつ for(int i = 50; i &amp;gt;= 0; i--){ Debug.</description>
+    </item>
+    
+    <item>
+      <title>第九回「演習」</title>
+      <link>https://kkspassepied.github.io/blog/posts/20220306/</link>
+      <pubDate>Sun, 06 Mar 2022 01:00:00 +0000</pubDate>
+      
+      <guid>https://kkspassepied.github.io/blog/posts/20220306/</guid>
+      <description>概要  場所  Discoards   日時  2022/03/06 10:00 - 10:50   お題  「演習問題しましょ」    詳細 演習 void Start() { // 強撃ビン × 50 撃てる弓がある  // for文で、1発ずつ撃って「残り○○発です」を表示するプログラムを作ってください。  // for(変数宣言；条件；変数更新) {  // 処理  // }  // if(条件){  // 処理  // }  } ポイント  ０から全部書いてもらう演習とした エラーが出たらその内容をチェックして修正するを繰り返してみた  次回 2022/03/10 予定</description>
+    </item>
+    
     <item>
       <title>第八回「配列」</title>
       <link>https://kkspassepied.github.io/blog/posts/20220227/</link>
@@ -69,29 +96,6 @@
       
       <guid>https://kkspassepied.github.io/blog/posts/20220112/</guid>
       <description>概要  場所  Discoards   日時  2022/01/12 22:00 - 23:18   お題  「変数」の復習+α。 「条件分岐」について学んでみよう。    詳細 前回の復習 変数の扱い void Start() { // 問題1 ：int型の変数shukakuを定義し、尻尾の数(1)を代入しよう  // ヒント：宣言の仕方 -&amp;gt; 型 変数名(shukaku);  // ：代入の仕方 -&amp;gt; 変数名(shukaku) = 尻尾の数(1);  // 問題2 ：問題1で代入したshukakuの値をコンソールに表示しよう  // ヒント：コンソールに表示するときは、Debug.Logを使う  } エラーの修正  値を未代入 値に異なる型を代入  void Start() { // 問題3 ：intの変数kisameを定義したが、プログラミングでエラーが出てしまった。  // 上手く表示されるように修正しよう。  // ヒント：変数の宣言しかしていない場合、コンピュータは何を表示していいのか分からない。  int kisame; Debug.</description>
-    </item>
-    
-    <item>
-      <title>第一回「Hello World」「変数」</title>
-      <link>https://kkspassepied.github.io/blog/posts/20220109/</link>
-      <pubDate>Sun, 09 Jan 2022 02:26:00 +0000</pubDate>
-      
-      <guid>https://kkspassepied.github.io/blog/posts/20220109/</guid>
-      <description>概要  場所  Discoards   日時  2022/01/09 09:00 - 11:10   お題  「Hello World!」「変数」について勉強しよう。    詳細 準備  VisualStudio2019にログイン  MSのアカウントがない場合は作成  GitHubアカウントでもいけるようなので、GitHubアカウントを作成した。     ペアプロのためVisualStudio2019に「Live Share」を入れてもらう  参考：MSDOC   「Live Share」をつないでみる  自分はVSCODEで実施    本編 (未)とあるところは説明しきれなかったところ。
-Hello World! Hello World /* * プログラム作成、実行、確認のプロセスを知る */ void Start() { // &amp;#34;Hello World!&amp;#34;を表示  Debug.Log(&amp;#34;Hello World!&amp;#34;); } 複数行で実行 /* * プログラムは上から順番に実行される * 表示する中身の数字は関係ない */ void Start() { Debug.</description>
-    </item>
-    
-    <item>
-      <title>Kickoff</title>
-      <link>https://kkspassepied.github.io/blog/posts/20211226/</link>
-      <pubDate>Sun, 26 Dec 2021 12:55:33 +0000</pubDate>
-      
-      <guid>https://kkspassepied.github.io/blog/posts/20211226/</guid>
-      <description>場所 Discoards
-日時 2022/12/26 19:50 - 21:55
-お題 やってみたいこと決める。
-内容 候補  ゲーム作ってみる Web開発 スマートロックとか作ってみる AI作ってみる  共通の趣味だしゲームが興味持って取り組めそう。
-詳細  環境は「Unity」 参考書をベースにプログラミングの基礎を学ぶ 参考書を終えたら好きなゲーム作ってみる  宿題  GitHubのOrganizationを用意 参考書用意  次回 2022/01/09 予定</description>
     </item>
     
   </channel>
